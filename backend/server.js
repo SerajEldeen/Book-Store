@@ -24,3 +24,5 @@ mongoose
 
 app.use(express.json());
 app.use("/api/v1", bookRouter);
+
+export default app;
