@@ -7,10 +7,10 @@ import bookRouter from "./routes/bookRoutes.js";
 
 const PORT = process.env.PORT;
 const MONGO_URL = process.env.MONGO_URL;
+const FRONTEND_URL = process.env.FRONTEND_URL;
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173" }));
-// app.use(cors());
+app.use(cors({ origin: FRONTEND_URL }));
 mongoose
   .connect(MONGO_URL, { dbName: "Book-Store" })
   .then(() => {
