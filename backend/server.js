@@ -11,7 +11,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL;
 
 const app = express();
 app.use(cors({ origin: FRONTEND_URL }));
-
+app.use(cors());
 mongoose
   .connect(MONGO_URL, { dbName: "Book-Store" })
   .then(() => {
