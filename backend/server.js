@@ -15,9 +15,9 @@ mongoose
   .connect(MONGO_URL, { dbName: "Book-Store" })
   .then(() => {
     console.log("DataBase Connected");
-    // app.listen(PORT, () => {
-    //   console.log("Server run on port: ", PORT);
-    // });
+    app.listen(PORT, () => {
+      console.log("Server run on port: ", PORT);
+    });
   })
   .catch((err) => console.log("There is an Error", err));
 
