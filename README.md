@@ -1,4 +1,4 @@
-# MERN CRUD Application
+# 🧾 MERN CRUD Application
 
 A simple full-stack web application that performs **CRUD operations** using the **MERN stack** (MongoDB, Express.js, React, Node.js).
 
@@ -6,10 +6,18 @@ A simple full-stack web application that performs **CRUD operations** using the 
 
 ## 🚀 Features
 
-- Create, Read, Update, and Delete operations
-- Built with modular and clean code
-- Frontend (React + Vite) and Backend (Express.js + Node.js)
-- Connected to MongoDB using Mongoose
+- 📝 Create, Read, Update, and Delete operations
+- 🧩 Built with modular and clean code
+- 🖥️ Frontend (React + Vite) and Backend (Express.js + Node.js)
+- 🔗 Connected to MongoDB using Mongoose
+
+---
+
+## 📸 Screenshots
+
+| Overview                   |
+| -------------------------- |
+| ![Overview](/overview.png) |
 
 ---
 
@@ -33,10 +41,32 @@ FRONTEND_URL=your_frontend_url" > backend/.env
 # Frontend environment variables (.env file)
 echo "VITE_BASE_URL=your_backend_api_url" > frontend/.env
 
+```
+
 # Install backend dependencies
+
+```bash
 cd backend
 npm install
+```
 
 # Install frontend dependencies
+
+```bash
 cd ../frontend
 npm install
+```
+
+# Start backend
+
+```bash
+cd backend
+npm run dev
+```
+
+# In another terminal, start frontend
+
+```bash
+cd ../frontend
+npm run dev
+```
